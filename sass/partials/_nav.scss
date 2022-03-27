@@ -1,0 +1,38 @@
+.nav {
+  background: getColour(color-light-yellow) !important;
+
+  &__pages {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+
+    @media (min-width: $phone-width) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &__logo {
+    color: getColour(color-black) !important;
+    font-size: 36px;
+  }
+
+  &__link {
+    color: getColour(color-light-grey) !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-nav;
+    font-size: 18px;
+    @media (max-width: $phone-width) {
+      font-size: 15px;
+    }
+  }
+
+  &__link--active {
+    color: getColour(color-pink) !important;
+  }
+
+  &__burger {
+    border: none;
+  }
+}

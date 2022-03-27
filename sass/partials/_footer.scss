@@ -1,0 +1,37 @@
+footer {
+  background: getColour(color-light-yellow) !important;
+  flex-shrink: 0;
+  color: getColour(color-light-grey) !important;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+
+  @media (min-width: $phone-width) {
+    padding: 1rem;
+  }
+
+  .container {
+    @extend .container-flex;
+    flex-direction: column;
+
+    @media (min-width: $phone-width) {
+      flex-direction: row;
+    }
+  }
+
+  a {
+    color: getColour(color-light-grey) !important;
+    text-decoration: none;
+
+    &:hover {
+      color: getColour(color-pink) !important;
+      text-decoration: none;
+    }
+  }
+
+  .contact {
+    margin: 1.5rem 0;
+    @media (min-width: $phone-width) {
+      margin: 0;
+    }
+  }
+}

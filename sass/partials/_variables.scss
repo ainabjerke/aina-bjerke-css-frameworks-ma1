@@ -1,0 +1,18 @@
+$phone-width: 576px;
+
+$font-primary: "open sans", sans-serif;
+$font-nav: "Archivo Narrow", sans-serif;
+
+$colours: (
+  color-pink: #c32c72,
+  color-background: #e5e5e5,
+  color-light-grey: #8d8d8d,
+  color-medium-grey: #463f3a,
+  color-light-yellow: #f4f3ee,
+  color-black: #262626,
+  color-white: #ffffff,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}
